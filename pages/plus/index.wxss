@@ -1,0 +1,28 @@
+@import "../../global.wxss";
+.methods-item {
+  display: flex;
+  margin: 20rpx 20rpx 45rpx;
+  padding: 60rpx;
+  box-shadow: 2rpx 6rpx 10rpx #eee;
+}
+.methods-item-icon {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 30rpx 50rpx 30rpx 0;
+}
+.methods-item-text {
+  flex: 1;
+  height: 160rpx;
+}
+.methods-item-text label {
+  display: block;
+  line-height: 60rpx;
+  font-size: 16px;
+  color: #1b37a8;
+}
+.methods-item-text text {
+  display: block;
+  line-height: 50rpx;
+  font-size: 13px;
+  color: #aaa;
+}

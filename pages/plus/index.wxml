@@ -1,0 +1,9 @@
+<view class="container">
+  <navigator class="methods-item" wx:for="{{methods}}" wx:key="idx" wx:for-item="item" url="{{item.url}}">
+    <image class="methods-item-icon" src="{{item.icon}}"></image>
+    <view class="methods-item-text">
+      <label>{{item.label}}</label>
+      <text>{{item.desc}}</text>
+    </view>
+  </navigator>
+</view>
