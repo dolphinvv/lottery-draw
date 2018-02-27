@@ -1,9 +1,10 @@
-@import "../../global.wxss";
 .methods-item {
   display: flex;
-  margin: 20rpx 20rpx 45rpx;
-  padding: 60rpx;
-  box-shadow: 2rpx 6rpx 10rpx #eee;
+  margin: 30rpx 30rpx 25rpx;
+  padding: 75rpx 60rpx;
+  border-radius: 8rpx;
+  box-shadow: 0 6rpx 10rpx #ececec;
+  background-color: #fff;
 }
 .methods-item-icon {
   width: 100rpx;

@@ -14,19 +14,19 @@
   },
   "tabBar": {
     "color": "#8a8a8a",
-    "selectedColor": "#1b37a8",
+    "selectedColor": "#0087c7",
     "borderStyle": "white",
     "backgroundColor": "#ffffff",
     "list": [
       {
         "pagePath": "pages/plus/index",
-        "iconPath": "images/icon-plus.png",
-        "selectedIconPath": "images/icon-plus-cur.png",
+        "iconPath": "images/icon-tab-plus.png",
+        "selectedIconPath": "images/icon-tab-plus-cur.png",
         "text": "新建"
       }, {
         "pagePath": "pages/my/index",
-        "iconPath": "images/icon-my.png",
-        "selectedIconPath": "images/icon-my-cur.png",
+        "iconPath": "images/icon-tab-my.png",
+        "selectedIconPath": "images/icon-tab-my-cur.png",
         "text": "我的"
       }
     ]

@@ -1,3 +1,37 @@
 <form class="container" bindsubmit="handleSubmit" bindreset="handleReset">
-  
+  <view class="lottery-box">
+    <view class="section">
+      <input type="text" class="txt-lottery" placeholder="抽奖主题" bindinput="handleThemeInput" />
+    </view>
+    <view class="section">
+      <view class="prize-item" wx:for="{{prizeList}}" wx:key="{{idx}}" wx:for-index="index" wx:for-item="item">
+        <view class="prize-item-operate" data-index="{{index}}" bindtap="handleReduce">
+          <image src="../../images/icon-reduce.png" />
+        </view>
+        <view class="prize-item-input">
+          <input type="text" class="txt-prize-name" placeholder="奖项名称" value="{{item.name}}" data-index="{{index}}" data-name="name" bindinput="handleInput" />
+          <input type="number" class="txt-prize-number" placeholder="中奖人数" value="{{item.number}}" data-index="{{index}}" data-name="number" bindinput="handleInput" />
+          <input type="number" class="txt-prize-per" placeholder="每次抽中人数" value="{{item.perNumber}}" data-index="{{index}}" data-name="perNumber" bindinput="handleInput" />
+        </view>
+      </view>
+      <view class="prize-item-plus" bindtap="handlePlus">
+        <view class="prize-item-operate">
+          <image src="../../images/icon-plus.png" />
+        </view>
+        <view class="prize-item-label">增加奖项</view>
+      </view>
+    </view>
+  </view>
+  <view class="lottery-box">
+    <view class="section">
+      <label class="prize-checkbox-label" bindtap="handleChange">
+        <checkbox value="{{onlyGroupJoin}}" checked="{{onlyGroupJoin}}" />仅限指定群内成员参与
+      </label>
+    </view>
+  </view>
+  <view class="lottery-button">
+    <view class="section">
+      <button class="btn-launch-lottery" formType="submit">发起抽奖</button>
+    </view>
+  </view>
 </form>
